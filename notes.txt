@@ -1,0 +1,84 @@
+How to format a go file?
+go fmt <file name>
+
+How compile a go file?
+go build <file name>
+
+How to run go program without saving an exceutable file?
+go run <file name>
+
+
+variable declaration
+======
+
+If you assign a value to a variable at the same time as you declare it, you can usually omit the variable
+type from the declaration. The type of the value assigned to the variable will be used as the type of
+that variable.
+
+var name string = "suresh" or var name = "suresh"
+
+Short variable declaration
+=========================
+
+name := "suresh"
+age := 4;
+height := 4.5
+
+
+If the name of a variable, function, or type begins with a capital letter, it is considered
+exported and can be accessed from packages outside the current one. (This is why the P in
+fmt.Println is capitalized: so it can be used from the main package or any other.) If a
+variable/function/type name begins with a lowercase letter, it is considered unexported and
+can only be accessed within the current package.
+
+
+It’s true that when the same variable name is declared twice in the same scope, we get a compile
+error:
+
+a := "suresh"
+a := "raj"
+
+compile error, But as long as at least one variable name in a short variable declaration is new, it’s allowed. The new
+variable names are treated as a declaration, and the existing names are treated as an assignment.
+
+a := "suresh"
+a, b := "raj", "bingo"
+
+fmt.Print(a, b) // raj bingo
+
+log.Fatal() - Fatal is equivalent to Print() followed by a call to os.Exit(1).
+
+Go Integer types
+
+Go's integer types are: uint8 , uint16 , uint32 , uint64 , int8 , int16 , 
+int32 and int64. 8, 16, 32 and 64 tell us how many bits each of 
+the types use. "uint" means “unsigned integer” while int 
+means “signed integer”. Unsigned integers contain 
+only positive numbers (or zero).
+
+
+
+GO OSS projects to learn:
+
+https://github.com/jonaslu/ain
+
+$GOPATH
+The $GOPATH environment variable lists places for Go to look for Go Workspaces.
+By default, Go assumes our GOPATH location is at $HOME/go
+
+$GOROOT
+The $GOROOT is where Go’s code, compiler, and tooling lives — this is not our source code.
+The $GOROOT is usually something like /usr/local/go. Our $GOPATH is usually something like $HOME/go.
+
+
+
+
+
+
+
+
+
+
+
+
+
