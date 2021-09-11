@@ -42,7 +42,7 @@ func main() {
 	maxAttempt := 10
 	attempt := 0
 	var input int
-	hasGussed := false
+	hasGuessed := false
 
 	for attempt < maxAttempt {
 		fmt.Println("you have", maxAttempt-attempt, "guesses left")
@@ -54,13 +54,13 @@ func main() {
 		} else if input > randomNumber {
 			fmt.Println("Oops. Your gues was HIGH\n")
 		} else {
-			hasGussed = true
+			hasGuessed = true
 			fmt.Println("Good Job! you guessed it!")
 			break
 		}
 	}
 
-	if !hasGussed {
+	if !hasGuessed {
 		fmt.Println("Sorry. You didn't guess my number. It was: ", randomNumber)
 	}
 }

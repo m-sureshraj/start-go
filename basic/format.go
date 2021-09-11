@@ -17,7 +17,7 @@ func main() {
 	// boolean type (true | false)
 	fmt.Printf("Boolean: %t \n", true)
 
-	// Could be any value. Chooses an approriate format based on the given value's type
+	// Could be any value. Chooses an appropriate format based on the given value's type
 	fmt.Printf("Values: %v \n", 4.5)
 
 	// Could be any value. Formatted as it would appear in the Go code

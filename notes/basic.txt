@@ -20,10 +20,14 @@ var name string = "suresh" or var name = "suresh"
 Short variable declaration
 =========================
 
+Short variable declarations may appear only inside functions. 
+In some contexts such as the initializers for "if", "for", or 
+"switch" statements, they can be used to declare local 
+temporary variables.
+
 name := "suresh"
 age := 4;
 height := 4.5
-
 
 If the name of a variable, function, or type begins with a capital letter, it is considered
 exported and can be accessed from packages outside the current one. (This is why the P in
@@ -62,23 +66,13 @@ GO OSS projects to learn:
 
 https://github.com/jonaslu/ain
 
-$GOPATH
-The $GOPATH environment variable lists places for Go to look for Go Workspaces.
-By default, Go assumes our GOPATH location is at $HOME/go
 
-$GOROOT
-The $GOROOT is where Go’s code, compiler, and tooling lives — this is not our source code.
-The $GOROOT is usually something like /usr/local/go. Our $GOPATH is usually something like $HOME/go.
+What is Panic in Go?
+basically a runtime issue. Issues you don't caught when 
+you compile the program.
 
 
-
-
-
-
-
-
-
-
-
+Array: 
+In Go arrays are fixed in size. Once defined it cannot be shrink or grow.
 
 
