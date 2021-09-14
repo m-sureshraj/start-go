@@ -1,0 +1,14 @@
+foo 
+bar
+baz
+
+
+Foo
+foo
+BaR
+baZ
+BAz
+
+oranges
+  
+  
